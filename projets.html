@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <h1>Bienvenue sur mon Portfolio</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        
+        <div class="github-project">
+            <a 
+                href="https://github.com/AnselmeDupuy/app-gestion-parking" 
+                target="_blank" class="github-link"
+            >
+                        <img 
+                            src="https://opengraph.githubassets.com/1a00/AnselmeDupuy/app-gestion-parking" 
+                            alt="Parking-project" 
+                            class="parking-project-image"
+                        >
+            </a>
+            <li class="embed-git"><script src="https://gist.github.com/AnselmeDupuy/d0d8ea578b5ee73ede2597c19511b004.js"></script></li>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const code = document.querySelector('.gist-file')
+            code.setAttribute('data-color-mode', 'dark');
+            code.setAttribute('data-light-theme', 'dark');
+        });
+    </script>
+</body>
+</html>
